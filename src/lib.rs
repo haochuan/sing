@@ -1,3 +1,5 @@
+extern crate rodio;
+
 pub mod note;
 pub mod score;
 

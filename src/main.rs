@@ -1,5 +1,7 @@
 extern crate clap;
 extern crate sing;
+extern crate spinner;
+
 use clap::{App, Arg};
 use spinner::SpinnerBuilder;
 use std::fs;

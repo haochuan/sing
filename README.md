@@ -1,88 +1,67 @@
 # sing
 
-Cli App to generate music and sing your text/file/code written in Rust.
+CLI app to generate music and sing your text/file/code written in Rust.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Make sure your have `cargo` available in your machine, see [Rust official website](https://www.rust-lang.org/tools/install) for the installation guide if you don't have `cargo` yet.
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+cargo install sing
 ```
 
-And repeat
+### Usage
+
+Generate music and sing with text:
 
 ```
-until finished
+sing -t "Hello World"
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Generate music and sing based on a file:
 
 ```
-Give an example
+sing -f <path-to-file>
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+Getting help:
 
 ```
-Give an example
+sing -h
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [clap](https://crates.io/crates/clap) - Command Line Argument Parser for Rust
+* [rodio](https://crates.io/crates/rodio) - Audio playback library
+* [spinner](https://crates.io/crates/spinner) - A simple library to add more interactivity to your terminal applications.
+
+## TODO
+
+I'm still pretty new with Rust, here are a list of things I'm trying to work on:
+
+- [ ] User can save the generated sound as wav or mp3
+- [ ] More available sounds rather than simple sine wave
+- [ ] Better logic to generate music, also probably use some pre defined scales.
+- [ ] Multi track would be fun
+
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Free feel to open PR for any change/feature you would like to have, the project is still in a very early stage.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/haochuan/sing/tags). 
 
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
